@@ -1,0 +1,1251 @@
+/*
+Theme Name: Ollie Child
+Theme URI: 
+Description: Child theme for Ollie
+Author: KSM Consulting
+Author URI: 
+Template: ollie
+Version: 1.0.2
+*/
+
+/* Add your custom CSS below this line */
+
+
+/*
+Theme Name: Ollie Child
+Description: KSM Consulting - Child theme for Ollie
+Author: KSM Consulting
+Template: ollie
+Version: 1.0.0
+*/
+
+/* ==============================
+   KSM CONSULTING - CUSTOM STYLES
+   ============================== */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Button border radius */
+.wp-block-button__link {
+    border-radius: 6px !important;
+    padding: 14px 28px !important;
+    letter-spacing: 0.02em;
+}
+
+/* Coral accent button variant */
+.wp-block-button.is-style-coral .wp-block-button__link {
+    background-color: #F75C46 !important;
+    color: #FFFFFF !important;
+}
+
+.wp-block-button.is-style-coral .wp-block-button__link:hover {
+    background-color: #0D1B3E !important;
+}
+
+/* Remove default list styling in nav */
+.wp-block-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Clean image rendering */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+/****Style header button*********/
+
+#modal-1-content > div > div > a.wp-block-button__link {
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+#modal-1-content > div > div > a.wp-block-button__link:hover {
+    background-color: #FFFFFF !important;
+    color: #0D1B3E !important;
+}
+
+
+/**************Space out header elements******************/
+
+#modal-1-content > ul {
+    column-gap: 1em;
+    padding-right: 1em;
+}
+
+
+/***************Make footer menu responsive******************************************** */
+
+@media screen and (max-width: 900px) {
+
+body > div.wp-site-blocks > footer > div > div.wp-block-columns.alignwide.is-layout-flex.wp-container-core-columns-is-layout-010e51cd.wp-block-columns-is-layout-flex {
+    display: none;
+}
+
+body > div.wp-site-blocks > footer > div.wp-block-group {
+    padding-top: 0px !important;
+}
+
+body > div.wp-site-blocks > footer > div {
+    padding-bottom: 63px !important;
+}
+
+}
+
+
+/******************Home Page Hero img*************************/
+
+#wp--skip-link--target > div > div.wp-block-group.alignfull.has-tertiary-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-13138de1.wp-block-group-is-layout-constrained {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+/*********BG img for section home page***********************/
+
+/* #wp--skip-link--target > div > div:nth-child(3) > div > div:nth-child(1) {
+    background: url(https://jeexinnovations.com/wp-content/uploads/2025/03/Home-Page-Top-Right-Image.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 672.72px;
+} */
+
+#wp--skip-link--target > div > div:nth-child(3) > div.wp-block-columns {
+    column-gap: 0px;
+}
+
+
+/* Hero two-column row */
+
+#ksm-hero-row {
+    display: flex !important;
+    align-items: stretch !important; /* Forces both columns to equal height */
+}
+
+/* Background image column */
+#ksm-hero-row > div.wp-block-column.is-vertically-aligned-center.ksm-hero-image-col.is-layout-flow.wp-block-column-is-layout-flow {
+    background: url(https://staging.ksmconsulting.org/wp-content/uploads/2026/02/Home-Page-Digital-Steps-Column-BG-Image.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: stretch;
+}
+
+
+/* Stack on mobile */
+@media (max-width: 781px) {
+    #ksm-hero-row {
+        flex-direction: column !important;
+    }
+
+    #ksm-hero-row > div.wp-block-column.is-vertically-aligned-center.ksm-hero-image-col.is-layout-flow.wp-block-column-is-layout-flow {
+        min-height: 300px !important; /* Give image visible height when stacked */
+        width: 100% !important;
+        order: 10;
+    }
+}
+
+
+/***************Fixing spacing menu items spacing*****************/
+
+[id^="modal-"] > ul {
+    row-gap: 0px;
+}
+
+
+/******Eliminating spacing above footer for mobile view****************/
+
+@media screen and (max-width: 900px) {
+
+    body > div.wp-site-blocks > footer > div > hr.wp-block-separator {
+    margin-top: 0px;
+}
+
+}
+
+
+/************Mobile menu styles*********************/
+
+/* Mobile menu overlay link colors */
+.wp-block-navigation__responsive-container.is-menu-open {
+    background-color: #FFFFFF !important; /* Overlay background */
+    color: var(--wp--preset--color--ksm-text) !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+    color: var(--wp--preset--color--ksm-text) !important;
+}
+
+/* Hover state */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content:hover {
+    color: var(--wp--preset--color--ksm-blue) !important;
+}
+
+/* Close button color */
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close {
+    color: var(--wp--preset--color--ksm-text) !important;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    body > div.wp-site-blocks > footer > div > div.wp-block-group.alignwide.is-layout-flow.wp-block-group-is-layout-flow > div > nav.is-responsive {
+    display: none;
+}
+
+}
+
+
+#modal-1-content > ul > li.wp-block-navigation-item.has-child.wp-block-navigation-submenu > ul > li > a {
+    color: var(--wp--preset--color--ksm-text);
+}
+
+
+/**************Remove margin lowest section About page************************/
+
+#wp--skip-link--target > div > div.wp-block-group.alignfull.has-base-color.has-primary-background-color.has-text-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-9f65a5da.wp-block-group-is-layout-constrained {
+    margin-bottom: 0px !important;
+}
+
+/***********Columns spacing on the Services page********************************/
+
+#wp--skip-link--target > div.entry-content > div.wp-block-group > div.wp-block-columns.alignwide.is-layout-flex {
+    column-gap: 2em;
+}
+
+#wp--skip-link--target > div.entry-content > div.wp-block-group > h2.wp-block-heading {
+    margin-bottom: 1em;
+}
+
+
+
+/********Client sites screenshots****************/
+
+#wp--skip-link--target > div.entry-content.alignwide.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div > div > div.wp-block-column > div.wp-block-cover > img.wp-block-cover__image-background {
+
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: var( --e-global-color-primary );
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+
+}
+
+
+@media screen and (max-width: 781px) {
+
+    #wp--skip-link--target > div.entry-content.alignwide.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div > div > div:nth-child(1) {
+    order: 10;
+}
+
+}
+
+
+/*******Text color footer menu**************/
+
+#modal-7-content > ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content {
+    color: #d4d4ec;
+}
+
+
+#modal-8-content > ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content {
+    color: #d4d4ec;
+}
+
+
+
+#modal-9-content > ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content {
+    color: #d4d4ec;
+}
+
+
+
+/********Contact form field fit to container***************/
+
+#wpcf7-f4287-p4279-o1 > form > p > span.wpcf7-form-control-wrap > input.wpcf7-form-control {
+    width: 100%;
+}
+
+#wpcf7-f4287-p4279-o1 > form > p > span > textarea {
+    width: 100%;
+}
+
+/***************Fix form submission response color******************/
+
+#wpcf7-f4287-p4279-o1 > form > div.wpcf7-response-output {
+    color: #fff;
+}
+
+/***************Syle sub menu*******************/
+
+#modal-1-content > ul > li > ul.wp-block-navigation-submenu {
+    border-radius: 0px;
+    border-top-width: 2px !important;
+    border-bottom-width: 0px !important;
+    border-right-width: 0px !important;
+    border-left-width: 0px !important;
+    border-color: var(--wp--preset--color--ksm-blue) !important;
+    border-style: solid !important;
+}
+
+/***Footer menu text color********/
+
+#modal-2-content > ul > li > a {
+    color: var(--wp--preset--color--main-accent) !important;
+}
+
+#modal-3-content > ul > li > a {
+    color: var(--wp--preset--color--main-accent) !important;
+}
+
+#modal-4-content > ul > li > a {
+    color: var(--wp--preset--color--main-accent) !important;
+}
+
+
+/*************Styling custom bullets on blog posts***********************/
+
+#wp--skip-link--target > div.entry-content.alignwide.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > ul > li::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 0;
+    top: 0.75em;
+    width: 20px;
+    height: 20px;
+    background-image: url('http://staging.ksmconsulting.org/wp-content/uploads/2026/03/right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block !important;
+    transform: translateY(-50%);
+}
+
+#wp--skip-link--target > div.entry-content.alignwide.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > ul > li {
+    display: block;
+    position: relative !important;
+    padding-left: 30px !important;
+}
+
+
+/**************Setting image width on blog posts*************************/
+
+#wp--skip-link--target > div.entry-content.alignwide.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > figure > img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*************Home page changes round2*******************/
+
+p.home-banner-sub-text-2 {
+    margin-top: 0px;
+}
+
+
+/* section.home-page-hero {
+    background-image: linear-gradient(#00387358,#ff950158),url('http://staging.ksmconsulting.org/wp-content/uploads/2024/05/AI-for-marketing.jpg');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* section.home-page-hero {
+    background-image: linear-gradient(#00000095,#00000095), url('http://staging.ksmconsulting.org/wp-content/uploads/2026/04/Hero-banner-img4.jpg');
+    background-attachment: scroll;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -1px !important;
+} */
+
+/*******************Setting button color*********************/
+
+div.button-for-dark-bg, div.button-for-dark-bg> a {
+    background-color: var(--wp--preset--color--ksm-blue);
+    border-radius: 6px;
+    color: var(--wp--preset--color--ksm-white);
+}
+
+div.button-for-dark-bg a:hover {
+    background-color: var(--wp--preset--color--ksm-white);
+    color: #0D1B3E;
+    
+}
+
+/*********************Turning off rogue p tag on home page with no content but taking up a line space; this should NOT be a greedy selector as that would remove ALL blog text!!!*********************/
+
+body.home #wp--skip-link--target > div.entry-content > p {
+    display: none;
+}
+
+
+div.feature-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 16px rgba(13, 27, 62, 0.08);
+    border: 1px solid rgba(13, 27, 62, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+div.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(13, 27, 62, 0.15);
+    border-color: rgba(70, 127, 247, 0.2);
+}
+
+
+/************************Methodology using grid for smaller widths****************************************/
+
+@media screen and (min-width: 1451px) {
+
+body:not(.block-editor-page) div.methodology-grid {
+    display: none;
+}
+
+body:not(.block-editor-page) figure.methodology-img {
+        display: block;
+}
+
+}
+
+
+@media screen and (max-width: 1450px) {
+
+body:not(.block-editor-page) div.methodology-grid {
+    display: grid;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+body:not(.block-editor-page) figure.methodology-img {
+    display: none;
+}
+
+}
+
+body.block-editor-page div.methodology-grid, body.block-editor-page figure.methodology-img {
+    display: block;
+}
+
+
+/********************Removing border around methodology container*********************************/
+
+div.ksm-methodology-container {
+    border: 0px;
+}
+
+
+
+/****************Menu link hover colors***********************/
+
+.wp-block-navigation-item__content:hover {
+    color: var(--wp--preset--color--ksm-blue) !important;
+    transition: color 0.2s ease !important;
+}
+
+.wp-block-navigation-item__content {
+    transition: color 0.2s ease !important;
+}
+
+
+/*************Targeting all secondary buttons*****************/
+
+/* Secondary button variants — purple/violet */
+:root [class*="is-style-secondary-button"] .wp-block-button__link {
+    background-color: var(--wp--preset--color--primary) !important;
+    color: var(--wp--preset--color--ksm-white) !important;
+    transition: background-color 0.2s ease !important;
+}
+
+/* Hover — darkens to navy for contrast */
+:root [class*="is-style-secondary-button"] .wp-block-button__link:hover {
+    background-color: var(--wp--preset--color--ksm-navy) !important;
+    color: var(--wp--preset--color--ksm-white) !important;
+}
+
+
+/*********Styling Get Started Button home page **************/
+
+div.get-started-button a {
+    background-color: var(--wp--preset--color--ksm-blue);
+}
+
+
+div.get-started-button a:hover {
+    background-color: var(--wp--preset--color--ksm-white);
+    color: #0D1B3E;
+
+}
+
+
+
+/* ==============================
+   KSM STICKY HEADER
+   ============================== */
+
+/* Base sticky behavior */
+.site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+    transition: background-color 0.3s ease, 
+                backdrop-filter 0.3s ease,
+                box-shadow 0.3s ease !important;
+}
+
+/* Scrolled state — applied via JS */
+.site-header.scrolled {
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* At top of page — fully opaque navy */
+.site-header.at-top {
+    background-color: var(--wp--preset--color--ksm-navy) !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+}
+
+/***Turn off child divs BG that were interfering***********/
+
+header.site-header.wp-block-template-part.scrolled > .wp-block-group.alignfull.ksm-website-header.has-ksm-white-color.has-ksm-navy-background-color.has-text-color.has-background.has-link-color.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    background-color: transparent !important;
+}
+
+header.site-header.wp-block-template-part.scrolled > .wp-block-group.alignfull.ksm-website-header.has-ksm-white-color.has-ksm-navy-background-color.has-text-color.has-background.has-link-color.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > div.wp-block-group.has-ksm-navy-background-color {
+    background-color: transparent !important;
+}
+
+/*****************************************Making menu link text visible against white BG*******************************************/
+
+/****Removed a on scroll style as no longer needed instead it was hiding sub-menu items***************/
+
+/* .site-header.scrolled .wp-block-navigation-item__content, .site-header.scrolled .wp-block-site-title a {
+    color: #FFFFFF !important;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4) !important;
+} */
+
+
+/* Fix FOUC — navy set server-side before JS loads */
+.ksm-header-ready .site-header {
+    background-color: var(--wp--preset--color--ksm-navy) !important;
+}
+
+/* Scrolled state — add semi-transparent navy */
+.ksm-header-ready .site-header.scrolled {
+    background-color: rgba(13, 27, 62, 0.4) !important;
+}
+
+
+/***************Footer padding mobile**********************/
+
+@media screen and (max-width: 900px) {
+
+    body > div.wp-site-blocks > footer > div.wp-block-group {
+    padding-top: var(--wp--preset--spacing--xx-large) !important;
+    padding-bottom: var(--wp--preset--spacing--xx-large) !important;
+}
+
+body > div.wp-site-blocks > footer > div > div.wp-block-columns.alignwide.has-custom-css.is-layout-flex.wp-block-columns-is-layout-flex {
+    padding-bottom: var(--wp--preset--spacing--medium) !important;
+}
+
+}
+
+
+
+/* Category filter dropdown — KSM branded */
+.rudr-category-filter--dropdown select {
+    background-color: var(--wp--preset--color--ksm-light) !important;
+    color: var(--wp--preset--color--ksm-navy) !important;
+    border: 1px solid var(--wp--preset--color--ksm-blue) !important;
+    border-radius: 6px !important;
+    padding: 0.6rem 1.25rem !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    font-family: var(--wp--preset--font-family--ksm-body) !important;
+    min-width: 200px !important;
+    appearance: auto !important;
+}
+
+.rudr-category-filter--dropdown select:focus {
+    outline: 2px solid var(--wp--preset--color--ksm-blue) !important;
+    outline-offset: 2px !important;
+}
+
+
+/**********Turning off footer menu mobile*****************/
+
+@media screen and (max-width: 900px) {
+
+body > div.wp-site-blocks > footer div.ksm-footer-menu-columns {
+    display: none;
+}
+
+}
+
+
+/*****************Expanding footer columns to full footer width turning off an Ollie styling******************/
+
+@media screen and (min-width: 782px) and (max-width: 900px) {
+
+body > div.wp-site-blocks > footer > div > div.wp-block-columns.ksm-footer-main-block > div:nth-child(1) {
+    flex-basis: auto;
+    padding-bottom: 2em;
+}
+
+
+}
+
+
+
+/************************************** Disable Transparent Header Below 900px ******************************************/
+
+
+/* Lock header to solid navy on mobile — no scroll effects */
+@media screen and (max-width: 900px) {
+    .site-header,
+    .ksm-header-ready .site-header,
+    .ksm-header-ready .site-header.at-top,
+    .ksm-header-ready .site-header.scrolled {
+        background-color: var(--wp--preset--color--ksm-navy) !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        box-shadow: none !important;
+        position: sticky !important;
+        top: 0 !important;
+    }
+}
+
+
+
+
+/*styling contact form on Contact Us page */
+form.wpcf7-form #cf-name {
+	display: flex;
+}
+
+form.wpcf7-form #cf-first-name {
+	padding-right: 1em;
+}
+
+/*********Changed form border and placeholder color**************/
+
+form.wpcf7-form input[type=email], form.wpcf7-form input[type=number], form.wpcf7-form input[type=password], form.wpcf7-form input[type=reset], form.wpcf7-form input[type=search], form.wpcf7-form input[type=tel], form.wpcf7-form input[type=text], form.wpcf7-form input[type=url], form.wpcf7-form select, form.wpcf7-form textarea {
+    border-color: transparent;
+    color: var(--wp--preset--color--ksm-text);
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--wp--preset--color--ksm-text) !important;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], textarea {
+    background: var(--wp--preset--color--main-accent) !important;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover, input[type="number"]:hover, textarea:hover {
+    border: 1px solid var(--wp--preset--color--ksm-text) !important;
+}
+
+
+form.wpcf7-form input[type=submit] {
+	border-radius: 10px;
+}
+
+form.wpcf7-form input::placeholder {
+	color: #000;
+}
+
+
+form.wpcf7-form input[type=email]:focus, form.wpcf7-form input[type=number]:focus, form.wpcf7-form input[type=password]:focus, form.wpcf7-form input[type=reset]:focus, form.wpcf7-form input[type=search]:focus, form.wpcf7-form input[type=tel]:focus, form.wpcf7-form input[type=text]:focus, form.wpcf7-form input[type=url]:focus, form.wpcf7-form select:focus, form.wpcf7-form textarea:focus {
+    border: 1px solid var(--wp--preset--color--ksm-text);
+}
+
+form.wpcf7-form input[type=email]:focus-visible, form.wpcf7-form input[type=number]:focus-visible, form.wpcf7-form input[type=password]:focus-visible, form.wpcf7-form input[type=reset]:focus-visible, form.wpcf7-form input[type=search]:focus-visible, form.wpcf7-form input[type=tel]:focus-visible, form.wpcf7-form input[type=text]:focus-visible, form.wpcf7-form input[type=url]:focus-visible, form.wpcf7-form select:focus-visible, form.wpcf7-form textarea:focus-visible {
+    border: 5px solid var(--wp--preset--color--ksm-blue) !important;
+    outline: none;
+}
+
+
+.wpcf7-submit {
+font-family: FontAwesome !important;
+}
+
+
+form.wpcf7-form textarea {
+  resize: none;
+}
+
+.wpcf7-form-control.wpcf7-textarea::placeholder {
+    color: #000;
+}
+
+form.wpcf7-form input[type=submit] {
+    border-radius: 5px;
+    padding: 0.5em;
+    background-color: var(--wp--preset--color--ksm-blue);
+    color: #fff;
+    border: 0px;
+}
+
+
+/*************Styling the form again with labels for full width***************/
+
+
+form.wpcf7-form label {
+    display: flex;
+    flex-direction: column;
+    color: var(--wp--preset--color--ksm-blue);
+}
+
+form.wpcf7-form input[type="text"], form.wpcf7-form input[type="email"], form.wpcf7-form input[type="tel"], form.wpcf7-form input[type="number"], form.wpcf7-form textarea {
+    width: 100%;
+}
+
+/* form.wpcf7-form fieldset.hidden-fields-container {
+    display: none;
+} */
+
+/* form.wpcf7-form label:nth-child(n+3) {
+    margin-top: 1em;
+} */
+
+/* form.wpcf7-form label:last-of-type {
+    margin-bottom: 1em;
+} */
+
+/****Form submission message*****/
+
+.wpcf7 form.sent .wpcf7-response-output {
+    color: var(--wp--preset--color--base);
+}
+
+
+/* Sloped bottom edge */
+
+@media screen and (min-width: 1450px) {
+
+    .ksm-sloped-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%) !important;
+    padding-bottom: calc(var(--wp--preset--spacing--xx-large) + 6vw) !important;
+}
+
+}
+
+/******Underline to band headings**********/
+
+@media screen and (min-width: 1040px) {
+
+
+.ksm-band-heading::after {
+    content: "";
+    position: absolute;
+    bottom: clamp(1.5em, 4.5vw, 1.6em) !important;
+    left: 0;
+    width: 3.75rem;
+    height: .3125rem;
+    background-color: var(--wp--preset--color--ksm-green-logo);
+}
+
+}
+
+
+/****************Remove margin-lowest section about us page***************/
+
+.ksm-digital-sales-engine-section {
+    margin-bottom: 0px !important;
+}
+
+
+
+
+
+
+
+/***********Styling Website Example page client website link buttons*****************/
+
+.wp-block-button.website-example-button > a {
+    background-color: var(--wp--preset--color--ksm-blue) !important;
+    color: var(--wp--preset--color--ksm-white) !important;
+    border-radius: 8px !important;
+    padding: 3rem !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.03em !important;
+    text-transform: uppercase !important;
+    border: 2px solid var(--wp--preset--color--ksm-blue) !important;
+    box-shadow: 0 4px 16px rgba(70, 127, 247, 0.35) !important;
+    transition: all 0.25s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .wp-block-button.website-example-button > a {
+
+        padding: 2rem !important;
+
+    }
+
+}
+
+
+.wp-block-button.website-example-button > a::after {
+    content: "→" !important;
+    font-size: 1.1rem !important;
+    transition: transform 0.2s ease !important;
+}
+
+
+.website-example-button .wp-block-button__link:hover {
+    background-color: var(--wp--preset--color--ksm-green) !important;
+    color: var(--wp--preset--color--base) !important;
+    border-color: var(--wp--preset--color--ksm-green) !important;
+    box-shadow: 0 6px 20px rgba(70, 127, 247, 0.45) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Arrow slides right on hover */
+.website-example-button .wp-block-button__link:hover::after {
+    transform: translateX(4px) !important;
+}
+
+
+
+
+/**********Sub menu styling fix********/
+
+#modal-1-content > ul > li.wp-block-navigation-item.has-child.wp-block-navigation-submenu > ul > li > a {
+    color: var(--wp--preset--color--main);
+}
+
+
+
+/*********Mobile submenu — always visible, pure CSS solution**************/
+/* No JS or Interactivity API dependency — submenus always expanded on mobile */
+
+@media (max-width: 900px) {
+
+    /* Always show submenus expanded */
+    .wp-block-navigation__responsive-container
+    .wp-block-navigation__submenu-container {
+        display: block !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        padding-left: 1rem !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Hide toggle chevron button — not needed when always open */
+    #modal-1-content > ul > li > span {
+        display: none;
+    }
+
+    /* Submenu item styling */
+    .wp-block-navigation__responsive-container
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation-item__content {
+        font-size: 0.9rem !important;
+        padding-left: 0.75rem !important;
+        border-left: 2px solid var(--wp--preset--color--ksm-blue) !important;
+        opacity: 0.85 !important;
+    }
+
+}
+
+
+
+
+
+/* ==============================
+   KSM TABS — Pure CSS Solution
+   Two-Column Sidebar Layout v5
+   - Sidebar 250px
+   - 48px left/right outer padding
+   - Panel: CSS grid (image | text)
+   - Decorative step number
+   ============================== */
+ 
+/* Hide all radio inputs */
+.ksm-tab-input {
+    display: none;
+}
+ 
+/* Outer wrapper — 48px padding matches page sections */
+.ksm-tabs-wrapper {
+    width: 100%;
+    margin: 2rem 0;
+    padding-left: 48px;
+    padding-right: 48px;
+    box-sizing: border-box;
+}
+ 
+/* Two-column grid: sidebar left, content right */
+.ksm-tabs-inner {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    border: 1px solid #d0dce8;
+    border-radius: 6px;
+    overflow: hidden;
+    min-height: 220px;
+}
+ 
+/* ==============================
+   LEFT SIDEBAR — Tab Labels
+   ============================== */
+ 
+.ksm-tab-labels {
+    display: flex;
+    flex-direction: column;
+    background: var(--wp--preset--color--ksm-light);
+    border-right: 1px solid #d0dce8;
+}
+ 
+.ksm-tab-label {
+    padding: 0.85rem 1.1rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--wp--preset--color--ksm-navy);
+    background: transparent;
+    border-bottom: 1px solid #d0dce8;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-left 0.15s;
+    border-left: 3px solid transparent;
+    line-height: 1.3;
+}
+ 
+.ksm-tab-label:last-child {
+    border-bottom: none;
+}
+ 
+.ksm-tab-label:hover {
+    background: #dce8f4;
+    border-left-color: var(--wp--preset--color--ksm-green);
+}
+ 
+#tab1:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab1"],
+#tab2:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab2"],
+#tab3:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab3"],
+#tab4:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab4"],
+#tab5:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab5"],
+#tab6:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab6"],
+#tab7:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab7"],
+#tab8:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab8"],
+#tab9:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab9"],
+#tab10:checked ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab10"] {
+    background: var(--wp--preset--color--ksm-green);
+    color: #ffffff;
+    border-left-color: var(--wp--preset--color--ksm-green);
+}
+ 
+/* ==============================
+   RIGHT COLUMN — Tab Panels
+   ============================== */
+ 
+.ksm-tab-panels {
+    position: relative;
+    background: #ffffff;
+}
+ 
+/* All panels hidden by default */
+.ksm-tab-panel {
+    display: none;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: start;
+    padding: 2rem 2.25rem;
+    animation: ksmFadeIn 0.2s ease;
+    position: relative;
+}
+ 
+/* Show correct panel as grid */
+#tab1:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel1,
+#tab2:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel2,
+#tab3:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel3,
+#tab4:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel4,
+#tab5:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel5,
+#tab6:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel6,
+#tab7:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel7,
+#tab8:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel8,
+#tab9:checked  ~ .ksm-tabs-inner .ksm-tab-panels #panel9,
+#tab10:checked ~ .ksm-tabs-inner .ksm-tab-panels #panel10 {
+    display: grid;
+}
+ 
+/* ==============================
+   PANEL IMAGE — left column
+   ============================== */
+ 
+.ksm-panel-img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 6px;
+    display: block;
+}
+ 
+/* ==============================
+   PANEL TEXT — right column
+   ============================== */
+ 
+.ksm-panel-text {
+    min-width: 0; /* prevents grid blowout on long words */
+}
+ 
+/* Panel heading */
+.ksm-panel-text h3 {
+    font-size: 1.2rem;
+    color: var(--wp--preset--color--ksm-navy);
+    margin-top: 0;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #d0dce8;
+}
+ 
+/* Panel body */
+.ksm-panel-text p {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #333;
+    margin: 0;
+}
+ 
+/* Decorative step number — top right of panel */
+.ksm-tab-panel::after {
+    content: attr(data-step);
+    position: absolute;
+    top: 0rem;
+    right: 1.75rem;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--wp--preset--color--ksm-green);
+    opacity: 0.4;
+    pointer-events: none;
+    letter-spacing: -2px;
+    font-family: inherit;
+}
+ 
+/* Fade-in animation */
+@keyframes ksmFadeIn {
+    from { opacity: 0; transform: translateX(6px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+ 
+/* ==============================
+   MOBILE — stack vertically
+   ============================== */
+@media (max-width: 768px) {
+ 
+    .ksm-tabs-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+ 
+    .ksm-tabs-inner {
+        grid-template-columns: 1fr;
+    }
+ 
+    .ksm-tab-labels {
+        border-right: none;
+        border-bottom: 1px solid #d0dce8;
+    }
+ 
+    .ksm-tab-label {
+        border-left: none;
+        border-bottom: 1px solid #d0dce8;
+        font-size: 0.85rem;
+        padding: 0.75rem 1rem;
+    }
+ 
+    .ksm-tab-label:last-child {
+        border-bottom: none;
+    }
+ 
+    #tab1:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab1"],
+    #tab2:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab2"],
+    #tab3:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab3"],
+    #tab4:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab4"],
+    #tab5:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab5"],
+    #tab6:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab6"],
+    #tab7:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab7"],
+    #tab8:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab8"],
+    #tab9:checked  ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab9"],
+    #tab10:checked ~ .ksm-tabs-inner .ksm-tab-labels label[for="tab10"] {
+        border-left: none;
+    }
+ 
+    /* Panel stacks to single column on mobile */
+    .ksm-tab-panel {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 1.25rem;
+    }
+ 
+    .ksm-panel-img {
+        height: 180px;
+        width: 100%;
+    }
+ 
+    .ksm-tab-panel::after {
+        font-size: 3rem;
+        top: 1rem;
+        right: 1rem;
+    }
+}
+ 
+
+
+
+
+
+/********************************+++++++++++++++++++++++++++++++++Swiper JS Styling+++++++++++++++++++++******************************/
+
+ .ksm-parallax-slider {
+  width: 100%;
+  background: #0D1B3E;               /* Deep Navy fallback */
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff;
+}
+
+@media (max-width: 768px) {
+
+  .ksm-parallax-slider { 
+    height: 100%; 
+}
+
+}
+
+.ksm-parallax-slider .parallax-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.ksm-parallax-slider .parallax-bg::after {   /* dark overlay for readability */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 27, 62, 0.55);
+}
+
+
+.ksm-parallax-slider .swiper-slide {
+  box-sizing: border-box;
+  padding: 60px 80px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .ksm-parallax-slider .swiper-slide {
+        padding: 0px 80px;
+    }
+}
+
+
+.ksm-parallax-slider .title {
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+
+.ksm-parallax-slider .subtitle { 
+    margin: 0px; 
+}
+
+.ksm-parallax-slider .text { 
+    max-width: 100%; 
+    line-height: 1.5; 
+}
+
+  /* .ksm-parallax-slider .swiper-slide { 
+    padding: 40px 50px; 
+} */
+
+
+
+div.ksm-swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.ksm-swiper-slide h1, div.ksm-swiper-slide p {
+    text-align: center;
+}
+
+div.swiper-slide > p.ksm-slide-subtitle, div.swiper-slide > p.ksm-slide-para {
+    color: var(--wp--preset--color--ksm-blue) !important;
+}
+
+div.swiper-slide > p.ksm-slide-subtitle, div.swiper-slide > h1.ksm-slide-title {
+    margin-bottom: 1em;
+}
+
+div.ksm-slide-text > p {
+    margin-top: 0px;
+    margin-bottom: 2em;
+}
+
+h1.ksm-slide-title {
+    font-size: var(--wp--preset--font-size--x-large) !important;
+    width: 80%;
+}
+
+div.ksm-slide-text {
+    width: 80%;
+}
+
+div.ksm-slide-buttons {
+    margin-bottom: 2em;
+}
+
+p.ksm-slide-subtitle {
+    margin-top: 2em !important;
+}
+
+div.ksm-slide-buttons {
+    margin-bottom: 2em !important;
+}
+
+
+/* Forces a premium, smooth easing curve across the slider track and background */
+.ksm-parallax-slider .swiper-wrapper,
+.ksm-parallax-slider .parallax-bg,
+.ksm-parallax-slider [data-swiper-parallax] {
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+
+
