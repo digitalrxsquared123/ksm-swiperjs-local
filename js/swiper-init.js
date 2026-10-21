@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   new Swiper('.ksm-parallax-slider', {
-    speed: 1200,
+    speed: 3000,
     loop: true,
     autoplay: {
-    delay: 2000, // Time in ms between slides (3 seconds)
+    delay: 3000, // Time in ms between slides (3 seconds)
     disableOnInteraction: false, // Keeps autoplay running after user swipes/clicks
   },
   effect: 'slide', // Change transition type ('slide', 'fade', 'cube', 'coverflow', 'flip', 'cards')
